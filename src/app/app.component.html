@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Действие</mat-label>
+  <mat-select [(value)]="work">
+    <mat-option *ngFor="let e of enumValues(WorkEnum)" [value]="e">{{e | work}}</mat-option>
+
+
+  </mat-select>
+</mat-form-field>
